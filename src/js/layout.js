@@ -9,8 +9,11 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { Personajes } from "./component/personajes";
-import { VistaCartaIndividual } from "./views/vistaCartaIndividual";
+import { cartaPlanetas } from "./component/cartaPlanetas";
+import { cartaPersonajes } from "./component/cartaPersonajes";
+import { cartaVehiculos } from "./component/cartaVehiculos";
+
+
 
 //create your first component
 const Layout = () => {
@@ -25,11 +28,11 @@ const Layout = () => {
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/cartaIndivual" element={<VistaCartaIndividual />}></Route>
-						{/* <Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} /> */}
+						<Route path="/demo" element={<Demo />} />
+						<Route path="/single/:uid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
+					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
@@ -37,3 +40,5 @@ const Layout = () => {
 };
 
 export default injectContext(Layout);
+
+{/* <Route path="/cartaIndividual" element={<VistaCartaIndividual />}></Route> */}

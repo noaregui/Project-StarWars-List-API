@@ -1,3 +1,5 @@
-/* 
-    General Styles
-*/
+.card-container {
+    display: flex;
+    justify-content: flex-start;
+
+}
