@@ -7,7 +7,7 @@ export const CartaPersonajes = () => {
     const { store, actions } = useContext(Context);
     //   const cargarPersonajes = useStoreActions(actions => actions.cargarPersonajes);
     //   const personajes = useStoreState(state => state.personajes);
-    
+
     useEffect(() => {
         actions.cargarPersonajes();
     }, []);
@@ -25,7 +25,11 @@ export const CartaPersonajes = () => {
                     />
                     <div className="card-body">
                         <h5 className="card-title">{personaje.name}</h5>
-                        <button className="btn btn-primary" onClick={() => navigate(`/vista-personaje-individual/${personaje.uid}/${index}`)}>Read more</button>
+                        <button class="button" data-text="Awesome" onClick={() => navigate(`/vista-personaje-individual/${personaje.uid}/${index}`)}>
+                            <span class="actual-text">&nbsp;Info&nbsp;</span>
+                            <span aria-hidden="true" class="hover-text">&nbsp;Info&nbsp;</span>
+                        </button>
+                       
                         <button><i className="fa-regular fa-heart"></i></button>
                     </div>
                 </div>
