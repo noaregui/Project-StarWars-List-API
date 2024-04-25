@@ -21,10 +21,9 @@ export const Navbar = () => {
                 />
             </Link>
             <div className="ml-auto">
-                <p>Contador: {contador}</p>
                 <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        Fav 🤺🤖🪐🚀
                     </button>
                     <ul className="dropdown-menu">
                         {store.favoritos?.map((favorito,index) => {
