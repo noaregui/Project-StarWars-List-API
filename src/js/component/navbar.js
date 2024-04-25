@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
-    const [contador, setContador] = useState(0); 
+    const [contador, setContador] = useState(0);
+    const {actions, store} = useContext(Context)
 
     const incrementarContador = () => {
         setContador(contador + 1);
@@ -20,9 +22,18 @@ export const Navbar = () => {
             </Link>
             <div className="ml-auto">
                 <p>Contador: {contador}</p>
-                <Link to="/demo">
-                    <button className="btn btn-primary">Check the Context in action</button>
-                </Link>
+                <div className="dropdown">
+                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul className="dropdown-menu">
+                        {store.favoritos?.map((favorito,index) => {
+                            return (
+                                <li>{favorito}</li>
+                            )
+                        })}                     
+                    </ul>
+                </div>
             </div>
         </nav>
     );

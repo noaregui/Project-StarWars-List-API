@@ -6,18 +6,20 @@ export const PlanetaIndividual = () => {
     const { store, actions } = useContext(Context);
     const navigate = useNavigate();
     const params = useParams();
+    
+    useEffect(() => {
+        actions.cargarPlanetaIndividual(params.uid);
+    }, []);
 
-    const planetaElegido = store.planetas.find(planeta => planeta.uid == params.uid)
-
-      return (
+    return (
         <div className="card-container">
-            <div className="card" style={{ width: "18rem" }} key={planetaElegido.uid}>
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A92131654C1E0B1A4C072A327E49FB30CA8BDED279852FB32CAD9B33B4AAAB1/scale?width=1600&aspectRatio=1.78&format=webp" className="card-img-top" alt="..." />
+            <div className="card" style={{ width: "18rem" }} >
+                <img src={store.imagenesPlanetas[params.numero]} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{planetaElegido.name}</h5>
-                    <p className="card-text">{planetaElegido.population}</p>
-                    <p className="card-text">{planetaElegido.climate}</p>
-                    <p className="card-text">{planetaElegido.gravity}</p>
+                    <h5 className="card-title">{store.planetaSeleccionado.name}</h5>
+                    <p className="card-text">Population: {store.planetaSeleccionado.population}</p>
+                    <p className="card-text">Climate: {store.planetaSeleccionado.climate}</p>
+                    <p className="card-text">Gravity: {store.planetaSeleccionado.gravity}</p>
                 </div>
             </div>
         </div>

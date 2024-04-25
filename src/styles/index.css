@@ -1,5 +1,19 @@
 .card-container {
-    display: flex;
-    justify-content: flex-start;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
 
+.card {
+    width: 18rem; /* Ancho fijo de cada card */
+    margin-bottom: 20px; /* Espacio entre las cards (inferior) */
+}
+
+
+
+img {
+    width: 600px; /* Ancho deseado para todas las imágenes */
+    height: 200px; /* Altura deseada para todas las imágenes */
+    object-fit: cover; 
 }
