@@ -31,20 +31,7 @@ export const Navbar = () => {
                         })}                     
                        
                     </div>
-                </div>
-
-                {/* <div className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Fav 🤺🤖🪐🚀
-                    </button>
-                    <ul className="dropdown-menu">
-                        {store.favoritos?.map((favorito,index) => {
-                            return (
-                                <li><div className="dropdown-item p-2">{favorito}</div></li>
-                            )
-                        })}                     
-                    </ul>
-                </div> */}
+                </div>                
             </div>
         </nav>
     );
