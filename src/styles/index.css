@@ -17,16 +17,19 @@ body {
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  width: 100%;
+  overflow-x: auto;
   background-color: #212121;
+  padding: 20px 0; 
 }
 
 .card {
-  width: 18rem;
-  margin-bottom: 20px;
+  min-width: 18rem;
+  flex-shrink: 0;
+  margin-right: 20px;
   background-color: #212121;
   color: white;
+ 
 }
 
 h1 {
