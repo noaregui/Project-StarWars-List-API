@@ -22,6 +22,24 @@ body {
   background-color: #212121;
   padding: 20px 0; 
 }
+.card-container-personaje {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 	20px;
+}
+.card-container-planeta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 	20px;
+}
+.card-container-vehiculo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 	20px;
+}
 .card {
   min-width: 18rem;
   flex-shrink: 0;

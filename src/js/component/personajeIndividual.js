@@ -12,7 +12,7 @@ export const PersonajeIndividual = () => {
     }, []);
 
       return (
-        <div className="card-container">
+        <div className="card-container-personaje">
             <div className="card" style={{ width: "18rem" }}>
                 <img src={store.imagenesPersonajes[params.numero]} className="card-img-top" alt="..." />
                 <div className="card-body">

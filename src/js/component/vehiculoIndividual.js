@@ -13,7 +13,7 @@ export const VehiculoIndividual = () => {
     }, []);
 
       return (
-        <div className="card-container">
+        <div className="card-container-vehiculo">
             <div className="card" style={{ width: "18rem" }}>
                 <img src={store.imagenesVehiculos[params.numero]} className="card-img-top" alt="..." />
                 <div className="card-body">

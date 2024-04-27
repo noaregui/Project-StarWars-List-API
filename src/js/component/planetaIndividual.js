@@ -13,7 +13,7 @@ export const PlanetaIndividual = () => {
     }, []);
 
     return (
-        <div className="card-container">
+        <div className="card-container-planeta">
             <div className="card" style={{ width: "18rem" }} >
                 <img src={store.imagenesPlanetas[params.numero]} className="card-img-top" alt="..." />
                 <div className="card-body">

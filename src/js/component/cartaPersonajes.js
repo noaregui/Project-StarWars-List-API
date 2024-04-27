@@ -35,9 +35,10 @@ export const CartaPersonajes = () => {
                         />
                         <div className="card-body">
                             <h5 className="card-title">{personaje.name}</h5>
-                            <button className="button" onClick={() => navigate(`/vista-personaje-individual/${personaje.uid}/${index}`)}>
-                                Info
-                            </button>
+                            <button className="button" data-text="Awesome" onClick={() => navigate(`/vista-personaje-individual/${personaje.uid}/${index}`)}>
+                                <span className="actual-text">&nbsp;Info&nbsp;</span>
+                                <span aria-hidden="true" className="hover-text">&nbsp;Info&nbsp;</span>
+                            </button>                           
                             <button className="fav" onClick={() => {
                                 actions.añadirFavoritos(personaje.name);
                                 alert(`${personaje.name} has been added to your favorites. The force is with you ✨`);
