@@ -18,19 +18,18 @@ body {
 .card-container {
   display: flex;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   background-color: #212121;
   padding: 20px 0; 
 }
-
 .card {
   min-width: 18rem;
   flex-shrink: 0;
   margin-right: 20px;
   background-color: #212121;
   color: white;
- 
 }
+
 
 h1 {
   color: white;
@@ -42,9 +41,7 @@ h1 {
 
 img {
   width: 600px;
-  /* Ancho deseado para todas las imágenes */
   height: 200px;
-  /* Altura deseada para todas las imágenes */
   object-fit: cover;
 }
 
@@ -223,3 +220,66 @@ p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.botones-scroll {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+.scroll {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(#053051, #7ea3df);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border: none;
+ 
+}
+.scroll.left {
+  transform: rotate(180deg);
+}
+.scroll.right {
+  transform: rotate(90deg);
+}
+.arrow path {
+  fill: white;
+}
+
+.text {
+  font-size: 0.7em;
+  width: 100px;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -18px;
+  opacity: 0;
+  transition-duration: 0.7s;
+}
+
+.scroll:hover .text {
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+
+.scroll:hover .arrow {
+  animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
