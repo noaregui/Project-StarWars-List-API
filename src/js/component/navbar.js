@@ -4,7 +4,7 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
     const [contador, setContador] = useState(0);
-    const {actions, store} = useContext(Context)
+    const { actions, store } = useContext(Context)
 
     const incrementarContador = () => {
         setContador(contador + 1);
@@ -21,18 +21,30 @@ export const Navbar = () => {
                 />
             </Link>
             <div className="ml-auto">
-                <div className="dropdown">
+                <div class="dropdown">
+                    <button class="button-dropdown">Favs 🪐 &nbsp; ▼</button>
+                    <div class="dropdown-content">
+                    {store.favoritos?.map((favorito,index) => {
+                            return (
+                                <a id="top" href="#">{favorito}</a>
+                            )
+                        })}                     
+                       
+                    </div>
+                </div>
+
+                {/* <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Fav 🤺🤖🪐🚀
                     </button>
                     <ul className="dropdown-menu">
                         {store.favoritos?.map((favorito,index) => {
                             return (
-                                <li>{favorito}</li>
+                                <li><div className="dropdown-item p-2">{favorito}</div></li>
                             )
                         })}                     
                     </ul>
-                </div>
+                </div> */}
             </div>
         </nav>
     );

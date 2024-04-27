@@ -47,7 +47,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                     .catch(err => console.error(err));
             },
             cargarVehiculoIndividual: (id) => {
-                fetch("https://www.swapi.tech/api/vehicles" + id)
+                fetch("https://www.swapi.tech/api/vehicles/" + id)
                     .then(res => res.json())
                     .then(data => setStore({ vehiculoSeleccionado: data.result.properties }))
                     .catch(err => console.error(err));

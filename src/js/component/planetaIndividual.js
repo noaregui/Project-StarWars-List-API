@@ -9,6 +9,7 @@ export const PlanetaIndividual = () => {
     
     useEffect(() => {
         actions.cargarPlanetaIndividual(params.uid);
+        console.log(params)
     }, []);
 
     return (

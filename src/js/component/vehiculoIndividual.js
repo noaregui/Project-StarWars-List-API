@@ -7,17 +7,20 @@ export const VehiculoIndividual = () => {
     const navigate = useNavigate();
     const params = useParams();
 
-    const vehiculoElegido = store.vehiculos.find(vehiculo => vehiculo.uid == params.uid)
+    useEffect(() => {
+        actions.cargarVehiculoIndividual(params.uid);
+        console.log(store.vehiculoSeleccionado)
+    }, []);
 
       return (
         <div className="card-container">
-            <div className="card" style={{ width: "18rem" }} key={vehiculoElegido.uid}>
+            <div className="card" style={{ width: "18rem" }}>
                 <img src={store.imagenesVehiculos[params.numero]} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{vehiculoElegido.name}</h5>
-                    <p className="card-text">Model: {vehiculoElegido.model}</p>
-                    <p className="card-text">Speed: {vehiculoElegido.max_atmosphering_speed}</p>
-                    <p className="card-text">Passengers: {vehiculoElegido.passengers}</p>
+                    <h5 className="card-title">{store.vehiculoSeleccionado.name}</h5>
+                    <p className="card-text">Model: {store.vehiculoSeleccionado.model}</p>
+                    <p className="card-text">Speed: {store.vehiculoSeleccionado.max_atmosphering_speed}</p>
+                    <p className="card-text">Passengers: {store.vehiculoSeleccionado.passengers}</p>
                 </div>
             </div>
         </div>
