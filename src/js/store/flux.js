@@ -53,12 +53,17 @@ const getState = ({ getStore, getActions, setStore }) => {
                     .catch(err => console.error(err));
             },            
             añadirFavoritos: (name) => {
-                setStore({favoritos: getStore().favoritos.concat(name)})
+                const currentFavorites = getStore().favoritos;
+                const updatedFavorites = [...currentFavorites, name];
+                setStore({ favoritos: updatedFavorites });
             },
+            
             eliminarFavoritos: (name) => {
-                setStore({favoritos: getStore().favoritos.filter((element)=>element!==name)})
-                actions.favoritos();
-            }
+                const currentFavorites = getStore().favoritos;
+                const updatedFavorites = currentFavorites.filter((favorito) => favorito !== name);
+                setStore({ favoritos: updatedFavorites });
+            },
+            
         }
     };
 };

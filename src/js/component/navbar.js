@@ -29,7 +29,9 @@ export const Navbar = () => {
                                 <>
                                     <div className="dropdown-favorito-papelera" key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
                                         <a id="top" href="#">{favorito}</a>
-                                        <button className="trash" onClick={() => actions.eliminarFavoritos(favorito)} style={{marginLeft: 'auto', marginRight: '10px'}}>
+                                        <button className="trash" onClick={() => 
+                                            actions.eliminarFavoritos(favorito)
+                                            } style={{marginLeft: 'auto', marginRight: '10px'}}>
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
