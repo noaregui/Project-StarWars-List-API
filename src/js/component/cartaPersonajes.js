@@ -38,15 +38,31 @@ export const CartaPersonajes = () => {
                             <button className="button" data-text="Awesome" onClick={() => navigate(`/vista-personaje-individual/${personaje.uid}/${index}`)}>
                                 <span className="actual-text">&nbsp;Info&nbsp;</span>
                                 <span aria-hidden="true" className="hover-text">&nbsp;Info&nbsp;</span>
-                            </button>                           
-                            <button className="fav" onClick={() => {
-                                actions.añadirFavoritos(personaje.name);
-                                alert(`${personaje.name} has been added to your favorites. The force is with you ✨`);
-                            }}>
-                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" className="icon">
-                                    <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
-                                </svg>
-                            </button>
+                            </button>    
+                            <div className="like" title="Like">
+                                <input type="checkbox" className="checkbox" id="Give-It-An-Id" onClick={() => {
+                                    actions.añadirFavoritos(personaje.name);
+                                    alert(`${personaje.name} has been added to your favorites. The force is with you ✨`);
+                                }} />
+                                <div className="svg-container">
+                                    <svg viewBox="0 0 24 24" className="svg-outline" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                                        </path>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" className="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                                        </path>
+                                    </svg>
+                                    <svg className="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="10,10 20,20"></polygon>
+                                        <polygon points="10,50 20,50"></polygon>
+                                        <polygon points="20,80 30,70"></polygon>
+                                        <polygon points="90,10 80,20"></polygon>
+                                        <polygon points="90,50 80,50"></polygon>
+                                        <polygon points="80,80 70,70"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
