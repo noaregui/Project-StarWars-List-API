@@ -6,9 +6,18 @@ export const Navbar = () => {
     const [contador, setContador] = useState(0);
     const { actions, store } = useContext(Context)
 
-    const incrementarContador = () => {
-        setContador(contador + 1);
-    };
+    const handleFav = (favorito) => {
+        const favoritoExistente = store.favoritos.find((favorito) => favorito === favorito);
+        console.log(favorito)
+
+        if (favoritoExistente) {
+            actions.eliminarFavoritos(favorito);
+            console.log(favoritoExistente)
+        } else {
+            actions.añadirFavoritos(favorito);
+        }
+        
+    }
 
     return (
         <nav className="navbar navbar-light bg-light mb-3">
@@ -30,8 +39,8 @@ export const Navbar = () => {
                                     <div className="dropdown-favorito-papelera" key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
                                         <a id="top" href="#">{favorito}</a>
                                         <button className="trash" onClick={() => 
-                                            actions.eliminarFavoritos(favorito)
-                                            } style={{marginLeft: 'auto', marginRight: '10px'}}>
+                                            handleFav(favorito)} 
+                                            style={{marginLeft: 'auto', marginRight: '10px'}}>
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
