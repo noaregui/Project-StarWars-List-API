@@ -1,3 +1,35 @@
+<div align="center">
+	<h1 align="center">🌌 Banco de datos de Star Wars</h1>
+</div>
+<p>Esta base de datos es tu guía completa para explorar una galaxia muy, muy lejana. También te servirá para empezar a utilizar API's y practicar con ellas teniendo un proyecto de referencia.</p>
+<div align="center">
+	<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTNjbHBxeWhhbXBvaWRnNHFnb2dzb2g1eDV0ejlicjBkamM3aDQ5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/067WrjChzDtxj1wH0F/giphy.webp"></img>
+</div>
+
+# 🌐 ¿Qué es una API?
+<p>Una API (Interfaz de Programación de Aplicaciones) permite a diferentes aplicaciones comunicarse entre sí. En términos sencillos, es como un mensajero que toma solicitudes, les dice a otras aplicaciones lo que necesitas y luego te devuelve la respuesta. Es como un menú en un restaurante. El menú te dice qué platos puedes pedir y cómo estarán preparados. Cuando haces tu pedido, la cocina (el sistema) lo prepara y te lo sirve. No necesitas saber cómo se cocina la comida, solo haces el pedido y recibes lo que pediste.
+
+Ejemplos de APIs:
+
+- 🗺️ API de Google Maps: Permite a las aplicaciones integrar mapas y funciones de localización. Por ejemplo, una app de delivery puede mostrarte tu ubicación y la ruta del repartidor en tiempo real.
+
+- 🐦 API de Twitter: Permite a las aplicaciones publicar tweets, leer perfiles y obtener datos de trending topics. Por ejemplo, una herramienta de gestión de redes sociales puede programar y publicar tweets automáticamente.
+
+- 💵 API de PayPal: Permite a las aplicaciones procesar pagos. Por ejemplo, una tienda online puede usar esta API para permitir a sus clientes pagar con PayPal.
+
+- 🌩️ API de OpenWeather: Permite a las aplicaciones obtener información meteorológica. Por ejemplo, una app de clima puede mostrar el pronóstico del tiempo usando los datos de esta API.
+
+Las APIs son esenciales porque permiten a los desarrolladores construir aplicaciones más ricas y funcionales sin tener que construir todo desde cero.</p>
+
+# 💫 SWAPI
+<p>Gracias a la API de Star Wars, tenemos el primer conjunto de datos del universo Star Wars, perfectamente cuantificados y listos para que los explores. Después de horas y horas de ver películas y sumergirse en contenido en línea, los creadores de esta API nos traen datos sobre personajes, películas, especies, naves espaciales, vehículos y planetas. Estos datos están en formato JSON y se pueden acceder a través de una implementación RESTish. Eso significa que ahora puedes recopilar y medir todos esos datos geniales sobre Star Wars de una manera súper fácil.
+
+<div align="center">
+  <a href="https://swapi.dev/">SWAPI</a>
+  <br></br>
+  <img width="400" src="https://media0.giphy.com/media/3o7abL1nxw0AvOK1pu/100.webp?cid=790b7611sor4vaigzed9r0zsk78i3qx4lgmpdcwmw37vs5rv&ep=v1_gifs_search&rid=100.webp&ct=g">
+</div>
+
 # WebApp boilerplate with React JS
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
 
