@@ -76,4 +76,16 @@ Puede actualizar `styles/index.css` o crear nuevos archivos `.css` dentro de `st
 ### 📱 Componentes
 Agrega más archivos a tu carpeta `./src/js/components` cuando sea necessario.
 
+## 👥 Contribución
+
+Si deseas contribuir al desarrollo de la web o tienes sugerencias para mejorar sus funcionalidades, ¡no dudes en hacer un fork del repositorio y enviar un pull request!
+
+## 📃 Contacto
+
+Puedes contactarme a través de [LinkedIn](https://www.linkedin.com/in/ainhoa-leon-arrieta/) si tienes preguntas o comentarios adicionales sobre el proyecto o simplemente quieres crear red.
+
+<div align="center">
+	<h2>Ahora sí...</h2>
+	<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZnYmY0NXgxdGIzMWdmNzNlcGs3Ymp5YXhmd2NzdjdueXZ0bnRpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FxzFK4yudFHRFde/giphy.webp"></img>
+</div>
 
