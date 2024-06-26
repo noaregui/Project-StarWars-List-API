@@ -74,7 +74,7 @@ $ npm run start
 Puede actualizar `styles/index.css` o crear nuevos archivos `.css` dentro de `styles/` e importarlos a sus archivos scss o js actuales según tus necesidades.
 
 ### 📱 Componentes
-Agrega más archivos a tu carpeta `./src/js/components` cuando sea necessario.
+Agrega más archivos a tu carpeta `./src/js/components` cuando sea necesario.
 
 ## 👥 Contribución
 
