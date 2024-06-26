@@ -30,49 +30,48 @@ Las APIs son esenciales porque permiten a los desarrolladores construir aplicaci
   <img width="400" src="https://media0.giphy.com/media/3o7abL1nxw0AvOK1pu/100.webp?cid=790b7611sor4vaigzed9r0zsk78i3qx4lgmpdcwmw37vs5rv&ep=v1_gifs_search&rid=100.webp&ct=g">
 </div>
 
-## Otras APIs
+## 👾 Otras APIs
 Os dejo algunas APIs gratuitas para futuros proyectos:
-1. Mapbox API: Ofrece datos de ubicación precisos
+1. 📍 Mapbox API: Ofrece datos de ubicación precisos
    <div align="center">
-	   <a href=""></a>
+	   <a href="https://docs.mapbox.com/api/overview/">Mapbox API</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
-2. NASA API: Tiene una excelente base de datos actualizada de información sobre el espacio.
+   
+2. 👩🏾‍🚀 NASA API: Tiene una excelente base de datos actualizada de información sobre el espacio.
    <div align="center">
-	   <a href=""></a>
+	   <a href="https://api.nasa.gov/">NASA API</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
-3. Favorite Quotes API: Proporciona una gran coleccion de citas.
+   
+3. 🗣️ Favorite Quotes API: Proporciona una gran coleccion de citas.
    <div align="center">
-	   <a href=""></a>
+	   <a href="https://favqs.com/api">Favorite Quotes API</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
-4. Edamam API: Proporciona acceso a una base de datos de alimentos y recetas con análisis de salud.
+   
+4. 🍛 Edamam API: Proporciona acceso a una base de datos de alimentos y recetas con análisis de salud.
    <div align="center">
-	   <a href=""></a>
+	   <a href="https://www.edamam.com/">Edamam API</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
-5. Fake Store API: Es una API gratuita que puede utilizar siempre que necesite datos pseudorreales para su sitio página de w-commerce.
+   
+5. 🛍️ Fake Store API: Es una API gratuita que puede utilizar siempre que necesite datos pseudorreales para su sitio página de w-commerce.
    <div align="center">
-	   <a href=""></a>
+	   <a href="https://fakestoreapi.com/">Fake Store API</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
-6. Pokemon API: Toda la base de datos de Pokemon en un mismo sitio.
+   
+6. 🐦‍🔥 Pokemon API: Toda la base de datos de Pokemon en un mismo sitio.
    <div align="center">
-	   <a href=""></a>
+	   <a href="">PokéAPI</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
-7. IGDB API: Es una popular base de datos de videojuegos con una API pública para crear excelentes sitios web orientados a videojuegos.
+   
+7. 🎮 IGDB API: Es una popular base de datos de videojuegos con una API pública para crear excelentes sitios web orientados a videojuegos.
    <div align="center">
-	   <a href=""></a>
+	   <a href="https://www.igdb.com/api">IGDB API</a>
 	   <br></br>
-	   <img src=""></img>
    </div>
 
 ## 🌱 Cómo empezar este proyecto
