@@ -114,7 +114,7 @@ $ cp .env.example .env
 $ npm run start
 ```
 
-### 🎨Estilos
+### 🎨 Estilos
 Puede actualizar `styles/index.css` o crear nuevos archivos `.css` dentro de `styles/` e importarlos a sus archivos scss o js actuales según tus necesidades.
 
 ### 📱 Componentes
